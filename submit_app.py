@@ -1,7 +1,7 @@
 from openai import OpenAI
+from dotenv import load_dotenv
 
-import os,re
-os.environ["OPENAI_API_KEY"] = "sk-proj-"
+load_dotenv()
 
 client = OpenAI()
 batch_input_file = client.files.create(
