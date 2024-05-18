@@ -12,7 +12,7 @@ client = OpenAI()
 # print(client.batches.list(limit=10))
 
 ## 返回结果.
-response = client.batches.retrieve("batch_gUwDs8Sdhw6DBEBp6JyPPXZa")
+response = client.batches.retrieve("batch_mCBPWpNwm68dNEz7vOkBSqgw")
 print(response.id)
 print(response.status)
 
@@ -21,7 +21,7 @@ print(response.status)
 
 
 # 使用Batch ID来检索批处理状态
-batch_status = client.batches.retrieve("batch_gUwDs8Sdhw6DBEBp6JyPPXZa")
+batch_status = client.batches.retrieve("batch_mCBPWpNwm68dNEz7vOkBSqgw")
 
 # # 检查批处理是否完成
 if batch_status.status == 'completed':
